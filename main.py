@@ -1,8 +1,8 @@
 import qrcode
 from pyrogram import Client, filters
 
-API_ID = 'YOUR_API_ID'
-API_HASH = 'YOUR_API_HASH'
+API_ID = '20211998'
+API_HASH = 'beeeebe74c0c467c47c6ac4a1c9d75b5'
 BOT_TOKEN = 'YOUR_BOT_TOKEN'
 
 app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
