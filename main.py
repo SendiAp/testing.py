@@ -17,7 +17,7 @@ app = Client("my_bot")
 def start(client, message: Message):
     message.reply_text("Masukkan nominal transaksi")
 
-@app.on_message(filters.text & ~filters.command)
+@app.on_message(filters.text)
 def process_amount(client, message: Message):
     try:
         amount = int(message.text)
