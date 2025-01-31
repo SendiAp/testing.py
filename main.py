@@ -11,7 +11,11 @@ API_CHECK_PAYMENT = "https://mutasiv2.vercel.app/check-payment"
 MERCHANT = "OK2179070"
 KEY = "240909817346567162179070OKCT202A57C1B483C9DFF963DA7C0834BBF5"
 
-app = Client("my_bot")
+API_ID = '20211998'
+API_HASH = 'beeeebe74c0c467c47c6ac4a1c9d75b5'
+BOT_TOKEN = '7829549841:AAG4XR8ZlkJUpkmZPQCu6Df25Xz5H73HpVY'
+
+app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 @app.on_message(filters.command("start"))
 def start(client, message: Message):
